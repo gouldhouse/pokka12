@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-slate-950">
+    <header class="flex justify-between items-center px-32 py-4 h-16 bg-slate-900">
+        <div class="font-bold text-red-200 font-sans">とし</div>
+        <div class="font-semibold text-red-200 font-sans">りんだりんだりんだ</div>
+    </header>
+    
+    <div>
+        <h1 class="text-red-500 text-5xl font-serif text-center p-10">マイプロフィール</h1>
+        <div class="flex justify-center items-center">
+            <div class="p-10 shadow-xl rounded-2xl h-72 w-96 bg-slate-900 gap-5">
+            <h2 class="text-3xl mb-10 text-red-200 font-sans">名前：金光家寿</h2>
+            <p class="text-xl text-red-200 font-sans">趣味：音楽</p>
+            <p class="text-xl text-red-200 font-sans">一言：君の事笑う奴は豆腐にぶつかって 死んじまえ</p>
+            <div class="flex gap-8 text-red-200">
+                <p class="text-xl font-sans">インスタ：</p>
+                <a href="https://www.uqwimax.jp/mobile/gimon/instagram/"><img src="image.png" alt="instagram" class="rounded-full h-7 w-7"></a></div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="text-red-500 text-5xl font-serif text-center p-10">マイスキル</h1>
+    <div class="flex justify-center items-center ">
+        <div class="p-10 h-72 w-96  rounded-2xl shadow-xl bg-slate-900 flex flex-col gap-5">
+            <p class="text-xl text-red-200 font-sans">空が飛べる</p>
+            <p class="text-xl text-red-200 font-sans">じゃんけんが強い</p>
+            <p class="text-xl text-red-200 font-sans">コーヒーが飲める</p>
+            <p class="text-xl text-red-200 font-sans">字が書ける</p>
+            <p class="text-xl text-red-200 font-sans">動物の声が聞こえる</p>
+        </div>
+    </div>
+
+    <h1 class="text-red-500 text-5xl font-serif text-center p-10">マイワーク</h1>
+    <section class="splide mb-10" aria-label="作品スライダー ">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide hover:scale-110 transition-all duration-500">
+                <img src="1.jpg" alt="1 " class="h-72 w-96 overflow-hidden rounded-2xl objectcover">
+                </li>
+                <li class="splide__slide hover:scale-110 transition-all duration-500">
+                <img src="2.jpg" alt="1" class="h-72 w-96 overflow-hidden rounded-2xl objectcover">
+                </li>
+                <li class="splide__slide hover:scale-110 transition-all duration-500">
+                <img src="3.jpg" alt="1" class="h-72 w-96 overflow-hidden rounded-2xl objectcover">
+                </li>
+                <li class="splide__slide hover:scale-110 transition-all duration-500">
+                <img src="4.jpg" alt="1" class="h-72 w-96 overflow-hidden rounded-2xl objectcover">
+                </li>
+                <li class="splide__slide  hover:scale-110 transition-all duration-500">
+                <img src="images.jpg" alt="1" class="h-72 w-96 overflow-hidden rounded-2xl objectcover">
+                </li>
+        </ul>
+        </div>
+    </section>
+<footer class="flex justify-between items-center px-16 py-4 h-16 bg-slate-900 mt-10">
+        <div class="font-bold text-red-200 font-sans">株式会社レッドハーツ有限会社実行委員サンライズステインメントワークホルダー事務所</div>
+        <div class="font-semibold text-red-200 font-sans">御覧のスポンサーでお送りしました</div>
+    </footer>
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+    new Splide('.splide', {
+  type:'loop',      // 'loop': 無限ループ / 'fade': フェード切り替え
+  perPage:3, 
+  perMove:1,    // 一度に表示するスライド数
+  gap: '2rem',       // スライド間の隙間
+  autoplay: true,    // 自動再生
+  interval: 3000,    // 自動再生の間隔（ミリ秒）
+}).mount();
+    </script>
+</body>
+</html>
